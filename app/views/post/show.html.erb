@@ -1,0 +1,55 @@
+<div id = "wrapper2">
+		<div id = "top">
+		<a href="/bright_ideas">Bright Ideas</a>
+		<a href="/logout">Logout</a>
+	</div>
+
+
+
+
+
+	<div id = "postlist2">
+		
+		<div id="leftpost2">
+			<p><a href = "/users/<%= @post1.user.id %>"> <%= @post1.user.alias %></a> says:</p>
+			
+		</div>
+		<div id="rightpost2">
+			<p><%= @post1.content %></p>
+		
+			
+		</div>
+
+
+	</div>
+
+	<div>
+		<h3>People who liked this post:</h3>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Alias</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<% @post1.likes.each do |likes| %>
+				<tr>
+					<td><a href = "/users/<%= likes.user.id %>"><%= likes.user.alias %></a></td>
+					<td><%= likes.user.name %></td>
+				</tr>
+				<% end %>
+
+			</tbody>
+
+
+		</table>
+		
+
+	</div>
+
+
+
+</div>

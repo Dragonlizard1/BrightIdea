@@ -1,0 +1,53 @@
+l<div id = "wrapper2">
+	<div class = "top">
+<h1 id = "name1">Hi <%= session[:name]%></h1>
+		<a id = "toplink" href="/logout">Logout</a>
+	</div>
+	
+
+	<div id = "post_content">
+	
+<div id= "flash1">
+ 
+  
+  <% if flash[:alert]%>
+  <% flash[:alert].each do |note| %>
+    <p id="alert1"><%= note %></p>  
+  <% end %>
+<% end %>
+  </div>
+
+		<form action = "/post/create" method = "post">
+      <input type = 'hidden' name = "authenticity_token" value = "<%=form_authenticity_token%>">
+      
+        <p class= "row2">
+      <input type = "text" name = "content" id = "post_input" placeholder = "Post something witty here..."></p>
+      
+      <p class= "row_button"><input type = "submit" value = "Idea!" id = "idea_button"></p>
+    </form>
+		
+	</div>
+<% @postall.each do |post1|%>
+	<div class = "postlist">
+		
+		<div class="leftpost">
+			<p class = "post_name"><a href = "users/<%= post1.user.id %>"> <%= post1.user.alias %></a> says:</p>
+			
+		</div>
+		<div class="rightpost">
+			<p class = "rightpost_content"><%= post1.content %></p>
+			<p><a href="post/like/<%= post1.id %>">Like</a>
+			<a class = "likepeople" href="bright_ideas/<%= post1.id %>"><%= post1.countlike %> people</a>like this.</p>
+			
+		</div >
+			<% if post1.user.id == session[:id] %>  
+			<div class = "buttonpost"><a href="/post/delete/<%= post1.id %>"><button id = "delete1_button">X</button></a>
+			</div>
+			<% end %>
+		
+	</div>
+	<% end %>
+
+
+
+</div>

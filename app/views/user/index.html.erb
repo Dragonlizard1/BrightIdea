@@ -1,0 +1,57 @@
+<div id = "wrapper">
+<h1> Welcome! </h1>
+
+<% if flash[:notice] or flash[:alert]%>
+<div id= "flash1">
+  <% if flash[:notice] %>
+  <% flash[:notice].each do |note| %>
+    <p id="notice"><%= note %></p>  
+  <% end %>
+    <% end %>
+  <% if flash[:alert]%>
+  <% flash[:alert].each do |note| %>
+    <p id="alert1"><%= note %></p>  
+  <% end %>
+    <% end %>
+  </div>
+<% end %>
+
+<div class = "left1">
+<h1>Register</h1>
+
+    <form action = "/user/create" method = "post">
+      <input type = 'hidden' name = "authenticity_token" value = "<%=form_authenticity_token%>">
+      <p class= "row1"><label class = "label1">Name: </label>
+      <input type = "text" name = "user[name]" class = "input1"></p>
+      <p class= "row1"><label class = "label1">Alias: </label>
+      <input type = "text" name = "user[alias]" class = "input1"></p>
+        <p class= "row1"><label class = "label1">Email: </label>
+      <input type = "text" name = "user[email]" class = "input1"></p>
+      
+        <p class= "row1"><label class = "label1">Password: </label>
+      <input type = "text" name = "user[password]" class = "input1"></p>
+        <p class= "row1"><label class = "label1">Confirm Password: </label>
+      <input type = "text" name = "password_confirmation" class = " input1"></p>
+
+
+      <p class= "row1"><input type = "submit" value = "Register" id = "register"></p>
+    </form>
+</div>
+
+<div class = "right1">
+<h1>Login</h1>
+
+<form action = "user/check" method = "post">
+  <input type = 'hidden' name = "authenticity_token" value = "<%=form_authenticity_token%>">
+
+   <p class= "row1"> <label class = "label1">Email: </label>
+  <input type = "text" name = "email" class = "input1"></p>
+    <p class= "row1"><label class = "label1">Password: </label>
+  <input type = "text" name = "password" class = "input1"></p>
+      
+
+  <p class= "row1"><input type = "submit" value = "Login" id = "login"></p>
+</form>
+</div>
+
+</div>

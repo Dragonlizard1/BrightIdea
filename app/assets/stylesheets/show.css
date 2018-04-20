@@ -1,0 +1,188 @@
+// Place all the styles related to the Post controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the User controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the User controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*
+{
+	margin:0;
+	padding: 0;
+	font-family: 'Slabo 27px', serif;
+}
+
+#wrapper2
+{
+	width: 700px;
+	margin: auto;
+}
+
+h1
+{
+	margin-bottom: 5px;
+}
+#flash1
+{
+	width: 900px;
+}
+#notice
+{
+	color:green;
+}
+#alert1
+{
+	color:red;
+}
+
+.left1, .right1
+{
+	border: 1px solid black;
+	width: 400px;
+	padding: 10px;
+
+
+	display: inline-block;
+	vertical-align: top;
+}
+.right1
+{
+	margin-left: 10px;
+}
+p
+{
+	font-size: 18px;
+}
+#input_location
+{
+	width: 148px;
+}
+.input1
+{
+	text-align: left;
+	width: 200px;
+}
+.label1
+{
+	text-align: left;
+	width: 150px;
+}
+.row1
+{
+	text-align:right;
+	width:350px;
+	padding: 16px;
+	margin-right: 10px;
+}
+.top
+{
+	width: 650px;
+	text-align:left;
+}
+#name1
+{
+	text-align: left;
+	width: 400px;
+	display: inline-block;
+	vertical-align: top;
+}
+#toplink
+{
+	width: 225px;
+	display: inline-block;
+	vertical-align: top;
+	text-align:right;
+}
+
+#post_content
+{
+	width: 800px;
+	margin-bottom: 40px;
+}
+#post_input
+{
+	width: 600px;
+	height: 40px;
+	display: inline-block;
+}
+.row2
+{
+	width: 600px;
+	display: inline-block;
+}
+.row_button
+{
+	width:150px;
+	display: inline-block;
+}
+#idea_button, 
+{
+	display: inline-block;
+	background-color: navy;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 25px;
+}
+#delete1_button
+{
+	display: inline-block;
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 25px
+}
+
+.border1
+{
+	border: 1px solid black;
+}
+
+.postlist
+{
+	width: 700px;
+	margin-bottom: 20px;
+}
+.leftpost
+{
+	display: inline-block;
+	width: 150px;
+	vertical-align: top;
+	padding: 5px;
+}
+.rightpost
+{
+	display: inline-block;
+	width:450px;
+	vertical-align: top;
+	
+	padding: 5px;
+}
+.likepeople
+{
+	margin-left: 10px;
+}
+.rightpost_content
+{
+	padding: 5px;
+	border: 1px solid black;
+	margin-bottom: 5px;
+}
+.buttonpost
+{
+	display: inline-block;
+	width:30px;
+	vertical-align: top;
+	padding: 5px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+// Place all the styles related to the User controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the User controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*
+{
+	margin:0;
+	padding: 0;
+	font-family: 'Slabo 27px', serif;
+}
+
+#wrapper
+{
+	width: 900px;
+	margin: auto;
+}
+#showwrapper3
+{
+	width: 600px;
+	margin: auto;
+	font-size: 20px;
+}
+.show_p
+{
+	font-size: 20px;
+	margin: 10px;
+}
+
+#top
+{
+	text-align: right;
+}
+a
+{
+	margin-left: 10px;
+}
+#divider
+{
+	border-top: 3px solid black;
+}
+h1
+{
+	margin-bottom: 5px;
+}
+#flash1
+{
+	width: 900px;
+}
+#notice
+{
+	color:green;
+}
+#alert1
+{
+	color:red;
+}
+
+.left1, .right1
+{
+	border: 1px solid black;
+	width: 400px;
+	padding: 10px;
+	background-color: lightgrey;
+
+	display: inline-block;
+	vertical-align: top;
+}
+.right1
+{
+	margin-left: 10px;
+}
+p
+{
+	font-size: 18px;
+}
+#input_location
+{
+	width: 148px;
+}
+.input1
+{
+	text-align: left;
+	width: 200px;
+}
+.label1
+{
+	text-align: left;
+	width: 150px;
+}
+.row1
+{
+	text-align:right;
+	width:350px;
+	padding: 16px;
+	margin-right: 10px;
+}
+
+#register, #login
+{
+	background-color: navy;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.border1
+{
+	border: 1px solid black;
+}
+
+
+
+
+
+
+

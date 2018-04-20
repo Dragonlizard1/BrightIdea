@@ -1,0 +1,19 @@
+<div id = "showwrapper3">
+	<div id = "top">
+		<a href="/bright_ideas">Bright Ideas</a>
+		<a href="/logout">Logout</a>
+	</div>
+
+	<p class = "show_p"><b>Name:</b> <%= @user.name%></p>
+	<p class = "show_p"><b>Alias:</b> <%= @user.alias %></p>
+	<p class = "show_p"><b>Email:</b> <%= @user.email %></p>
+
+
+	<div id = "divider">
+		<p class = "show_p"><b>Total Number of Post:</b> <%= @user.posts.length %></p>
+		<p class = "show_p"><b>Total Number of Likes:</b> <%= @user.likes.length %></p>
+	</div>
+
+
+
+</div>
